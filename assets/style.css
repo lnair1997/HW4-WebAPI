@@ -1,0 +1,19 @@
+.navbar-brand {
+    margin:0px;
+}
+.timer {
+    font-size: 20px;
+    color: white;
+    margin-bottom:0px;
+}
+.container-md {
+    margin: 80px;
+}
+
+p {
+    text-align: center;
+}
+
+#start {
+    text-align: center;
+}
