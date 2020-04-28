@@ -1,4 +1,6 @@
-
+var mainContainer= document.querySelectorAll(".container-md");
+var content= document.getElementById("content");
+var startBtn= document.getElementById("start");
 
 var score;
 var time;
@@ -59,3 +61,30 @@ var quiz = [
         correct: 3
     }
 ];
+
+startBtn.addEventListener("click", function() {
+    // score at zero
+    score= 0;
+    // timer to 60 sec
+    time= 60;
+
+    var timer= document.createElement("h2");
+    timer.setAttribute("id", "timer");
+    timer.textContent = "Time remaining: ";
+    document.getElementById("content").appendChild(timer);
+    
+    var span= document.createElement("span");
+    span.setAttribute("id", "countdown");
+    span.textContent = time;
+    document.getElementById("timer").appendChild(span);
+
+    quizTime = setInterval(function() {
+        time--;
+        if (time <= 0) {
+            clearInterval(quizTime);
+            endQuiz();
+        }
+    })
+
+    
+});
