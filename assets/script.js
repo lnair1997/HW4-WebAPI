@@ -60,7 +60,7 @@ var quiz = [
     },
 ];
 
-var secondsRemaining = 120;
+var secondsRemaining = 60;
 var scores = 0;
 var timerInterval = "";
 
