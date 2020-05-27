@@ -13,35 +13,45 @@
     <link rel="stylesheet" href="./assets/style.css" type="text/css">
 </head>
 
+
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <h1 class="navbar-brand" href="./index.html">JavaScript Coding Quiz</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
+        <h1 class="navbar-brand text-center">JavaScript Coding Quiz</h1>
     </nav>
 
-    <main class="container-md my-5 mx-auto">
+    <main class="container-md">
+        <div id="quizContainer">
+            <h1>Coding Timed Quiz</h1>
+            <p>Timed multiple choice quiz about JavaScript.</p>
+            <br>
+            <button type="button" class="btn btn-info btn-lg" id="startBtn">Start Quiz!</button>
+        </div>
 
-        <h1 class="text-center">JavaScript Quiz</h1>
+        <div id="questionsDis" style="display: none">
+            <div>Timer: <span id="countDown"></span></div>
+            <h3 id="currentQ"></h3>
+            <ul id="options"></ul>
+            <div id="results"></div>
+        </div>
 
-        <section class="card w-75 mx-auto my-5 p-4" id="content">
-            <p> Multiple choice quiz about JavaScript.</p>
+        <div id="scoreScreen" style="display: none">
+            <h3>Congratulations!</h3>
+            <h4>Your score is <span id="finalScore"></span></h4>
+            <br>
+            <p>Enter initials:
+                <input type="text" id="initial">
+                <button id="submitInitial">Submit</button>
+            </p>
+        </div>
 
-            <button type="button" class="btn btn-info" id="start">
-                Start Quiz!
-            </button>
-        </section>
-
+        <div id="highScores" style="display: none">
+            <h2>High Score List</h2>
+            <hr>
+            <ul id="highScoreList"></ul>
+            <table id="highscore-table"></table>
+        </div>
     </main>
-
-
-
-
-
-
-
-
-
-
 
     <footer class="page-footer font-small fixed-bottom">
         <div class="footer-copyright text-center py-3 bg-dark">Copyright by Lathisha Nair</div>

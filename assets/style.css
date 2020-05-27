@@ -1,19 +1,16 @@
-.navbar-brand {
-    margin:0px;
+body {
+    background-image: url("https://unsplash.com/photos/zHsTwzb-nH4");
+    text-align: center;
+    /* background-color: thistle; */
 }
-.timer {
-    font-size: 20px;
-    color: white;
-    margin-bottom:0px;
-}
+
 .container-md {
-    margin: 80px;
+    background-color: #B0EFEF;
+    margin-top: 80px;
+    padding: 80px 20px;
+    border: solid 20px #343a40;
 }
 
-p {
-    text-align: center;
-}
-
-#start {
-    text-align: center;
+li {
+    list-style: none;
 }
