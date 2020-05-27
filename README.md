@@ -16,11 +16,11 @@
 ---
 ## Essential Code
 
-![Start Quiz](./assets/img/startQuiz.jpg)
+![Start Quiz](./assets/img/startQuiz.JPG)
 
 - The start button is an essential part of the quiz. When clicked, it shows questions and answers but it also starts the timer at 60 seconds. As the user picks their choices, it will automatically move to the next question.
 
-![End Quiz](./assets/img/endQuiz.jpg)
+![End Quiz](./assets/img/endQuiz.JPG)
 
 - The user finishes the quiz and will be presented with this page. It will show them their score, which is the questions they got correct, and will be able to enter their initials for the highscore list.
 
