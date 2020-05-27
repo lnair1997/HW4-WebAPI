@@ -142,15 +142,30 @@ function timeOver() {
 };
 
 
-
-var highscores = [];
-var storedHighscores = JSON.parse(localStorage.getItem("highscores"));
-
 // 5)
 submitInitial.addEventListener("click", function () {
     highScores.style.display = "block";
     scoreScreen.style.display = "none";
-    localStorage.setItem("scores", finalScore);
-    localStorage.setItem("initials", initial.value);
+    saveHighScore();
 });
 
+// 6)
+function saveHighScore() {
+    var initials = initial.value.trim();
+
+    if (initials !== "") {
+        var highscores =
+            JSON.parse(window.localStorage.getItem("highscores")) || [];
+
+        var newScore = {
+            score: scores,
+            initials: initials
+        };
+
+        // save to localstorage
+        highscores.push(newScore);
+        window.localStorage.setItem("highscores", JSON.stringify(highscores));
+    }
+}
+
+// 7) Display highscore?

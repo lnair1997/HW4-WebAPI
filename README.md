@@ -1,15 +1,34 @@
 # HW4-WebAPI
-pseudo-code:
-1. start button initiate quiz
-2. timer starts and questions
-3. question and answer options show up with timer on side
-4. incorrect subtracts time
-5. all questions ans or timer reaches 0 game over
-6. submit initals and score
 
-- Timer
-- Score count
-- questions and answer options
-- answers need checkbox 
-- start button
-- local storage of leaderboard
+## Description
+
+- A timed quiz on Javascript that uses local storage to save highscores.
+
+---
+## Technologies Used:
+
+1. HTML
+2. CSS
+3. Javascript
+4. Twitter Bootstrap
+5. ScreentoGif
+
+---
+## Essential Code
+
+![Start Quiz](./assets/img/startQuiz.jpg)
+
+- The start button is an essential part of the quiz. When clicked, it shows questions and answers but it also starts the timer at 60 seconds. As the user picks their choices, it will automatically move to the next question.
+
+![End Quiz](./assets/img/endQuiz.jpg)
+
+- The user finishes the quiz and will be presented with this page. It will show them their score, which is the questions they got correct, and will be able to enter their initials for the highscore list.
+
+---
+## Gif Walkthrough
+
+![Gif Walkthrough](./assets/img/JavascriptQuiz.gif)
+
+---
+
+[Link to Webpage](https://lnair1997.github.io/HW4-WebAPI/)
