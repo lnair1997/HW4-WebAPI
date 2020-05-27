@@ -101,7 +101,7 @@ function renderQuestion() {
         var li = document.createElement("li");
         var button = document.createElement("button");
         button.classList.add("btn");
-        button.style.backgroundColor = "#FFFFD8";
+        button.style.border = "solid #072050";
         button.textContent = answer;
         li.appendChild(button);
         options.appendChild(li);

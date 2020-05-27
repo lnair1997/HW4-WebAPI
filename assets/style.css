@@ -13,4 +13,9 @@ body {
 
 li {
     list-style: none;
+    margin: 5px;
+}
+
+#countDown {
+    color: rgb(49, 66, 221);
 }
